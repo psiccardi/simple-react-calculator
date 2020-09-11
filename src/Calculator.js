@@ -37,7 +37,7 @@ class Calculator extends Component {
   switchSign = () => {
     let number = parseFloat(this.state.currentNumber);
     number = -number;
-    console.log(this.state.operations);
+
     let operations = [...this.state.operations];
 
     if (operations.length) {
@@ -52,8 +52,6 @@ class Calculator extends Component {
     }
     const currOperations = [...this.state.operations];
     let operations = [...this.state.operations];
-
-    console.log("push", operations, this.state.performingOperation);
 
     if (!this.state.performingOperation) {
       operations.push(this.state.currentNumber);
@@ -130,14 +128,14 @@ class Calculator extends Component {
     if (this.state.error) {
       return;
     }
-    console.log("digit", this.state.operations);
+
     let curr = "" + this.state.currentNumber;
     if (this.state.performingOperation) {
       curr = "0";
     }
     let currSplit = curr.split(".");
     let digitLength = curr.replace(/\-|\./, "").length;
-    console.log(digitLength, curr);
+
     if (
       digitLength === 8 ||
       (currSplit[1] && digit === ".") ||
