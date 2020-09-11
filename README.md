@@ -4,8 +4,7 @@ Simple calculator made in React for learning purposes.
 
 ## Installation and setup
 
-- Install docker ([Docker install instructions](https://docs.docker.com/install/))
-- Install git ([Git install instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+- Install git ([Git install instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03))
 - Clone this repo on a folder with following instruction:\
   `git clone git://github.com/psiccardi/simple-react-calculator.git folder-name`
 - Run `cd folder-name`
